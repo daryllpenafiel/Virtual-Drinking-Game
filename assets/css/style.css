@@ -1,0 +1,54 @@
+
+    body {
+      margin: auto;
+      text-align: center;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 34px;
+      color: white;
+      width: 960px;
+      text-align: center;
+    }
+    
+    .title {
+      font-family: 'Bangers', cursive;
+      font-size: 50px;
+      line-height: 200%;
+    }
+
+     .rules {
+      font-family: 'Bangers', cursive;
+      font-size: 32px;
+      line-height: 150%;
+    }
+
+
+    .loss {
+      color: firebrick;
+    }
+
+    .limit {
+      color:#f2f735;
+    }
+
+    .win {
+      color: chartreuse;
+    }
+
+    #result {
+      color: rebeccapurple;
+      font-size: 26px;
+      line-height: 150%;
+      padding-bottom: 25px;
+    }
+
+    #bgvideo {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translate(-50%, -50%);
+    }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Virtual Drinking Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+</head>
+
+<body>
+
+<video autoplay loop id="bgvideo">
+    <source src="beach.mp4" type="video/mp4">
+</video>
+
+<p class="title"> Virtual Drinking Game </p>
+<p class="rules">Each drink has a random value that gets you closer to the perfect state of bliss. 
+  Hit the drinking limit to win. Go over it and you lose.</p>
+
+<p id="result"><br><br></p>
+
+  <div class=row>
+
+    <div class="col-xs-12 col-md-6">
+      <p class="limit">DRINKING LIMIT: <span id="randomNumber"> </span></p>
+      <p>YOUR LEVEL: <span id="yourLevel"> 0 </span></p>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <p class="win">WINS: <span id="wins" class="score"> 0 </span></p>
+      <p class="loss">LOSSES: <span id="losses" class="score"> 0 </span></p>
+    </div>
+
+    </div>
+    
+    <div class="images">
+      <img src="./assets/images/beer.png" id="beer" height=230 width=220>
+      <img src="./assets/images/shots.png" id="shots" height=230 width=220>
+      <img src="./assets/images/jack.png" id="jack" height=230 width=220>
+      <img src="./assets/images/mojito.png" id="mojito" height=230 width=220>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="./assets/javascript/game.js"> </script>
+
+   
+</body>
+
+</html>
