@@ -77,6 +77,16 @@
 
 }
 
+  function updateMusicWin () { 
+  var snd = new Audio("./assets/music/win.mp3");
+  snd.play();
+  }
+
+  function updateMusicLoss () {
+  var snd = new Audio("./assets/music/loss.mp3");
+  snd.play();
+  }
+
     //update Scores
     var wins = 0;
     var losses = 0;
@@ -85,12 +95,16 @@
       wins++;
       $('#wins').text(wins);
       reset();
+      updateMusicWin();
+      $("#result").css("color","green");
       $("#result").html('<br>' + "You reached the ideal level! Now just chill...or press any drink to start next round" + '<br>');
     };
 
     function updateLoss() {
       losses++;
       $('#losses').text(losses);
+      updateMusicLoss();
+      $("#result").css("color","red");
       $("#result").html('<br>' + "You had too much! Press any drink to start next round!" + '<br>');
       reset();
     };
