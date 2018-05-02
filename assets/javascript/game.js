@@ -78,7 +78,7 @@
 }
 
   function updateMusicWin () { 
-  var snd = new Audio("./assets/music/win.mp3");
+  var snd = new Audio("./assets/music/win.wav");
   snd.play();
   }
 
